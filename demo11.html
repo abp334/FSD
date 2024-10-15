@@ -1,0 +1,38 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form method="get" action="/login">
+      Username
+      <input
+        type="text"
+        placeholder="Enter Here"
+        maxlength="10"
+        minlength="3"
+      />
+      <br />Rank <input type="number" min="1" max="10"/> <br />Rating
+      <input type="range" min="3" max="50" value="10" /> <br />Search
+      <input type="search" required /> <br /><input type="submit" /><input
+        type="reset"
+        name=""
+        id=""
+      />
+      <select name="select" id="">
+        <option selected disabled hidden>---select state---</option>
+
+        <optgroup label="Gujarat">
+          <option value="">Ahmedabad</option>
+          <option value="">Surat</option>
+          <option value="">Rajkot</option>
+        </optgroup>
+        <optgroup label="Maharashtra">
+          <option value="">Mumbai</option>
+          <option value="">Pune</option>
+        </optgroup>
+      </select>
+    </form>
+  </body>
+</html>
