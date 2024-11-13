@@ -1,0 +1,54 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .a::first-line {
+        color: blue;
+        font-size: 15px;
+        font-variant: small-caps;
+      }
+      .a::first-letter {
+        color: cyan;
+        font-size: 35px;
+      }
+      .b::before {
+        content: "Hello";
+        color: blue;
+      }
+      /* .b::before {
+        content: url("https://th.bing.com/th/id/OIP.ieSDo2yr46hzNVZTT8wi_wHaEo?w=2429&h=1517&rs=1&pid=ImgDetMain");
+      } */
+      .b::after {
+        content: "\27A4";
+      }
+      li::marker {
+        color: aqua;
+        font-size: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="a">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident
+      possimus dolor illo commodi quae nesciunt pariatur praesentium esse quo ad
+      dolorem quos perferendis, nostrum est aperiam porro ipsum consectetur
+      corrupti?
+    </p>
+    <p class="b">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus
+      assumenda voluptatum optio amet quia, molestiae eligendi similique eum
+      nostrum quis quas, architecto ea aspernatur facilis? Reprehenderit eveniet
+      saepe impedit exercitationem!
+    </p>
+    <ol>
+      <li>ABC</li>
+      <li>PQR</li>
+    </ol>
+    <ul>
+      <li>ABCDEFG</li>
+      <li>ABCDEFG</li>
+    </ul>
+  </body>
+</html>
