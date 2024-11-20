@@ -1,0 +1,65 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .user {
+        width: 100px;
+        border: 1px solid black;
+        border-radius: 10px;
+        background-color: rgb(235, 219, 206);
+        transition-property: all;
+        transition-duration: 1s;
+        transition-delay: 0.2s;
+      }
+      .user:hover {
+        width: 200px;
+        background-color: rgb(221, 165, 115);
+      }
+      .pass {
+        width: 100px;
+        border: 1px solid black;
+        border-radius: 10px;
+        background-color: rgb(235, 219, 206);
+        transition-property: all;
+        transition-duration: 1s;
+        transition-delay: 0.2s;
+      }
+      .pass:hover {
+        width: 200px;
+        background-color: rgb(221, 165, 115);
+      }
+      .submit {
+        border: 1px solid black;
+        border-radius: 10px;
+        background-color: blue;
+        transition: all;
+      }
+      .submit:hover {
+        background-color: rgb(56, 56, 214);
+      }
+      .reset {
+        border: 1px solid black;
+        border-radius: 10px;
+        background-color: blue;
+        transition: all;
+      }
+      .reset:hover {
+        background-color: rgb(56, 56, 214);
+      }
+    </style>
+  </head>
+  <body>
+    <form action="\login">
+      <label for="user">UserName</label>
+      <input type="text" class="user" />
+      <br />
+      <br /><label for="password">Password</label>
+      <input type="password" class="pass" />
+      <br />
+      <br /><input type="submit" class="submit" />
+      <input type="reset" class="reset" />
+    </form>
+  </body>
+</html>
