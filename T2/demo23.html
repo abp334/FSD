@@ -1,0 +1,31 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .tooltip {
+        display: inline-block;
+        border-bottom: 1px dotted red;
+      }
+      .tooltiptext {
+        visibility: hidden;
+        position: absolute;
+        margin: 2px;
+        padding: 5px;
+        background-color: black;
+        color: white;
+        border-radius: 5px;
+      }
+      .tooltip:hover .tooltiptext {
+        visibility: visible;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="tooltip">
+      Hover
+      <span class="tooltiptext">Enter Info</span>
+    </div>
+  </body>
+</html>
