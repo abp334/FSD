@@ -1,0 +1,25 @@
+<!-- write a javascript that uses function to calculate how many days are left in
+your upcoming birthday from current day in the same year -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      function daysdifference(date1, date2) {
+        one_day = 24 * 60 * 60 * 1000;
+        date1_ms = date1.getTime();
+        date2_ms = date2.getTime();
+        difference_ms = Math.abs(date1_ms - date2_ms);
+        return Math.round(difference_ms / one_day);
+      }
+      var d1 = new Date();
+      var d2 = new Date();
+      d1.setDate(9);
+      d1.setMonth(3);
+      document.write("days left: " + daysdifference(d1, d2));
+    </script>
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
