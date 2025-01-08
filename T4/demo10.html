@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      function getval() {
+        ret = prompt("Enter your name: ", "Your name here");
+        set = confirm("Are you sure this is the name ?");
+        if (set == true) {
+          if (ret == null || ret.length == 0) {
+            document.write("Please enter a valid name");
+          } else {
+            document.write("You entered: " + ret);
+          }
+        } else {
+          if (ret == null || ret.length == 0) {
+            document.write("Please enter a valid name");
+          } else {
+            document.write("User cancelled: " + ret);
+          }
+        }
+      }
+    </script>
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="button" value="OK" onclick="getval()" />
+  </body>
+</html>

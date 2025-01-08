@@ -1,0 +1,27 @@
+<!-- write js check occurance of a given character into a string entered by user -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      function check() {
+        count = 0;
+        s = prompt("Enter your String");
+        a = prompt("Enter your Character");
+        for (i = 0; i < s.length; i++) {
+          if (s.charAt(i) == a) {
+            count++;
+          }
+        }
+        document.write(
+          "No of occurrences of " + a + " in " + s + " are: " + count
+        );
+      }
+    </script>
+    <title>Document</title>
+  </head>
+  <body>
+    <input type="button" value="OK" onclick="check()" />
+  </body>
+</html>
