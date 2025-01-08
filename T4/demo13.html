@@ -1,0 +1,26 @@
+<!-- write a js function that takes an array of objects Grocery which calculates
+total price and returns as number grocery obj has product quantity and price -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      var grocery_list = [
+        { product: "Apple", quantity: 3, price: 80 },
+        { product: "Kiwi", quantity: 5, price: 85 },
+        { product: "Pineapple", quantity: 6, price: 95 },
+      ];
+      var total = 0;
+      grocery_list.forEach((element) => {
+        document.write(
+          `${element.product} ${element.quantity} ${element.price}` + "<br>"
+        );
+        total += element.quantity * element.price;
+      });
+      document.write(`Total: ${total}`);
+    </script>
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
