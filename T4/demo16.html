@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>Para1</p>
+    <p>Para2</p>
+    <p>Para3</p>
+    <script>
+      P_element = document.getElementsByTagName("p");
+      console.log(P_element[0].innerHTML);
+      console.log(P_element[1].innerHTML);
+      console.log(P_element[2].innerHTML);
+      for (i = 0; i < P_element.length; i++) {
+        P_element[i].innerHTML = "changed";
+      }
+    </script>
+  </body>
+</html>

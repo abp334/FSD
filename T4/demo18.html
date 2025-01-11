@@ -1,0 +1,22 @@
+<!-- write a javascript code to convert a string to uppercase and lowercase by clicking on uppercase and lowercase buttons -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p id="p1">Hello</p>
+    <input type="submit" value="Uppercase" onclick="upcase()" />
+    <input type="submit" value="Lowercase" onclick="downcase()" />
+    <script>
+      function upcase() {
+        document.getElementById("p1").style.textTransform = "uppercase";
+      }
+      function downcase() {
+        document.getElementById("p1").style.textTransform = "lowercase";
+      }
+    </script>
+  </body>
+</html>

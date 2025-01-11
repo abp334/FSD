@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p name="p">Para 1</p>
+    <p name="p">Para 2</p>
+    <p name="p">Para 3</p>
+    <input type="submit" value="change" onclick="cls()" />
+    <input type="reset" value="reset" onclick="rst()" />
+    <script>
+      function cls() {
+        c = document.getElementsByTagName("p");
+        for (i = 0; i < c.length; i++) {
+          if (c[i].name == "p") {
+            c[i].innerHTML = "changed text";
+            c[i].style.color = "blue";
+            c[i].style.backgroundColor = "aqua";
+            c[i].name = "changed";
+          } else {
+            c[i].innerHTML = "Para" + " " + (i + 1);
+            c[i].style.color = "black";
+            c[i].style.backgroundColor = "white";
+            c[i].name = "p";
+          }
+        }
+      }
+      function rst() {
+        c = document.getElementsByTagName("p");
+        for (i = 0; i < c.length; i++) {
+          c[i].innerHTML = "Para" + " " + (i + 1);
+          c[i].style.color = "black";
+          c[i].style.backgroundColor = "white";
+        }
+      }
+    </script>
+  </body>
+</html>
