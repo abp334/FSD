@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script>
+      List = [80, 90, 92];
+      //for of loop
+      for (let score of List) {
+        console.log(score);
+      }
+      for (let [index, val] of List.entries()) {
+        console.log(`${val} is stored in ${index}`);
+      }
+      obj = { a: "hello", b: "good", c: "morning" };
+      for (let k in obj) {
+        console.log(`The keys are ${k} and values are ${obj[k]}`);
+      }
+      //Javascript Map
+      //   Collection of values where each element is stored as key value pair
+      //   Steps to create map:
+      //   Passing an array to new Map()
+      //   Create a map and use Map.set()
+      //   Method:
+      //   set() add change existing values
+      //   delete() removes a map element
+      //   clear() removes all elements from the map
+      //   startsWith(substring,position) default is 0
+      //   endsWith(substring,length) default is length of string
+      //   includes(secondstring)
+      let map = new Map();
+      map.set("ABC", "Faculty");
+      map.set("XYZ", "Dean");
+      map.set("PQR", "Peon");
+      map.set("JKL", "Admin");
+
+      //OR
+      // let map1 = new Map([
+      //   ["ABC", "Faculty"],
+      //   ["XYZ", "Dean"],
+      //   ["PQR", "Peon"],
+      //   ["JKL", "Admin"],
+      // ]);
+      map.delete("PQR");
+      map.set("PQR", "Sweaper");
+      map.set("ABC", "HOD");
+      console.log(map);
+      // console.log(map1);
+      s = "this is demo";
+      console.log(s.startsWith("this"));
+      console.log(s.startsWith("this", 8));
+      console.log(s.startsWith("demo", 8));
+      console.log(s.endsWith("demo", 12));
+      console.log(s.endsWith("is", 7));
+      console.log(s.includes("is"));
+      //Array Destructuring
+      nation = ["Peacock", "Rupees", "Ganga"];
+      const [Bird, Currency, River] = nation;
+      console.log(`${Bird},${Currency},${River}`);
+      //class constructor
+      class Person {
+        constructor(n, a) {
+          this.name = n;
+          this.age = a;
+        }
+        getname = () => {
+          console.log(this.age);
+          return this.name;
+        };
+      }
+      let obj5 = new Person("ABC", 29);
+      console.log(obj5.getname());
+    </script>
+    <title>Document</title>
+  </head>
+  <body></body>
+</html>
